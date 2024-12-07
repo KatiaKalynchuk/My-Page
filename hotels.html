@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotels</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <a href="index.html" class="main-header-logo">
+                <img src="main-logo.svg" alt="Page main logo">
+            </a>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="index.html" class="navigation-list">Main</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-list">About Sedona</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="hotels.html" class="navigation-list navigation-list-current">Hotels</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="old-page.html" class="navigation-list">Old page</a>
+                    </li>
+                </ul>
+
+                <ul class="navigation-list navigation-utilities">
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-list">
+                            <span class="visibility-hidden">Search</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-list">
+                            <span class="visibility-hidden">Favorites</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-list button-primary">Wanna be there!</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-inner">
+            <header class="inner-header">
+                <h1 class="inner-header-title">Hotels of Sedona</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">Main</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Hotels</a>
+                    </li>
+                </ul>
+            </header>
+            <section class="filters">
+                <h2 class="visibility-hidden">Filters</h2>
+                <form class="form-filters" action="" method="get">
+                    <fieldset class="form-filters-group">
+                        <legend class="form-filters-title">Infrastructure</legend>
+                        <ul class="form-filters-list">
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="checkbox" checked name="swimming-pools">
+                                    Swimming pools
+                                </label>
+                            </li>
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="checkbox" checked name="parking">
+                                    Parking
+                                </label>
+                            </li>
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="checkbox" name="wifi">
+                                    Wi-Fi
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="form-filters-group">
+                        <legend class="form-filters-title">Type of housing</legend>
+                        <ul class="form-filters-list">
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="radio" checked name="housing-type" value="hotel">
+                                    Hotel
+                                </label>
+                            </li>
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="radio" checked name="housing-type" value="motel">
+                                    Motel
+                                </label>
+                            </li>
+                            <li class="form-filters-list-item">
+                                <label class="form-filters-control">
+                                    <input class="form-filters-input" type="radio" name="housing-type" value="apartments">
+                                    Apartments
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button class="primary-button" type="submit">Show</button>
+                    <button class="default-button" type="reset">Reset</button>
+                </form>
+                <div class="catalog-list">
+                    <p class="catalog-search-result">Hotels founded: 4</p>
+                    <select class="select-control" aria-label="Sorting">
+                        <option value="popular">Popular first</option>
+                        <option value="cheap">Cheap first</option>
+                        <option value="expensive">Expensive first</option>
+                    </select>
+                    <ul class="visibility-type-list">
+                        <li class="visibility-type-item">
+                            <button class="visibility-type-btn" type="button">
+                                <span class="visibility-hidden">
+                                    Show small cards
+                                </span>
+                                <svg></svg>
+                            </button>
+                        </li>
+                        <li class="visibility-type-item">
+                            <button class="visibility-type-btn" type="button">
+                                <span class="visibility-hidden">
+                                    Show big cards
+                                </span>
+                                <svg></svg>
+                            </button>
+                        </li>
+                        <li class="visibility-type-item">
+                            <button class="visibility-type-btn" type="button">
+                                <span class="visibility-hidden">
+                                    Show list
+                                </span>
+                                <svg></svg>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <ul class="catalog-list-cards">
+                        <li class="catalog-list-cards-item">
+                            <div class="catalog-list-cards-item-wrapper">
+                                <img src="#" alt="Hotel 1 description">
+                                <h3>Amara Resort & Spa</h3>
+                                <span class="catalog-list-cards-item-type">Hotel</span>
+                                <span class="catalog-list-cards-item-prise">From 50$</span>
+
+                                <button class="button-primary">Details</button>
+                                <button class="button-secondary">To favorites</button>
+
+                                <span class="catalog-list-cards-rate-stars">*****</span>
+                                <span class="catalog-list-cards-rate">Rate 9.2</span>
+                            </div>
+                        </li>
+                        <li class="catalog-list-cards-item">
+                            <div class="catalog-list-cards-item-wrapper">
+                                <img src="#" alt="Hotel 1 description">
+                                <h3>Villas at Poco Diablo</h3>
+                                <span class="catalog-list-cards-item-type">Hotel</span>
+                                <span class="catalog-list-cards-item-prise">From 60$</span>
+
+                                <button class="button-primary">Details</button>
+                                <button class="button-secondary">To favorites</button>
+
+                                <span class="catalog-list-cards-rate-stars">****</span>
+                                <span class="catalog-list-cards-rate">Rate 8.5</span>
+                            </div>
+                        </li>
+                        <li class="catalog-list-cards-item">
+                            <div class="catalog-list-cards-item-wrapper">
+                                <img src="#" alt="Hotel 1 description">
+                                <h3>Desert Quail Inn</h3>
+                                <span class="catalog-list-cards-item-type">Hotel</span>
+                                <span class="catalog-list-cards-item-prise">From 70$</span>
+
+                                <button class="button-primary">Details</button>
+                                <button class="button-secondary">To favorites</button>
+
+                                <span class="catalog-list-cards-rate-stars">*****</span>
+                                <span class="catalog-list-cards-rate">Rate 6.1</span>
+                            </div>
+                        </li>
+                        <li class="catalog-list-cards-item">
+                            <div class="catalog-list-cards-item-wrapper">
+                                <img src="#" alt="Hotel 1 description">
+                                <h3>GreenTree Inn</h3>
+                                <span class="catalog-list-cards-item-type">Hotel</span>
+                                <span class="catalog-list-cards-item-prise">From 50$</span>
+
+                                <button class="button-primary">Details</button>
+                                <button class="button-secondary">To favorites</button>
+
+                                <span class="catalog-list-cards-rate-stars">*****</span>
+                                <span class="catalog-list-cards-rate">Rate 9.2</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-prev pagination-disabled">
+                                <span class="visibility-hidde">Prev page</span>
+                            </a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-current" href="#">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-next" href="#">
+                                <span class="visibility-hidde">Next page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="content-intro mailing-list">
+                <h2>Subscribe to the newsletter</h2>
+                <p>Only useful information and no spam, honest boy scout!</p>
+                <label class="visibility-hidden" for="email-input">Your email</label>
+                <input type="email" placeholder="Your email" id="email-input">
+                <button class="button-secondary">Subscribe</button>
+            </section>
+            <section class="footer-contacts">
+                <h2 class="visibility-hidden">Contacts</h2>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg class="footer-socials-svg">Facebook</svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg class="footer-socials-svg">Twitter</svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg class="footer-socials-svg">Youtube</svg>
+                        </a>
+                    </li>
+                </ul>
+                <address>
+                    <a class="footer-contacts-phone" href="tel:+380934567897">+380934567897</a>
+                </address>
+                <img class="footer-project-logo" src="#" alt="Link to Nahuy">
+            </section>
+        </footer>
+    </body>
+</html>
